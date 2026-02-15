@@ -14,7 +14,17 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="tr">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6862528607801068"
+          crossOrigin="anonymous"
+        ></script>
+      </head>
+
+      <body className={inter.className}>
+        {children}
+      </body>
     </html>
   );
 }
